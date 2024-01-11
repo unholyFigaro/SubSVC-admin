@@ -1,6 +1,7 @@
 version: '3.8'
 services: 
   backend:
+    image: ec2-13-51-6-86.eu-north-1.compute.amazonaws.com:5500/admin/backend
     build:
       context: .
       dockerfile: Dockerfile
@@ -16,6 +17,7 @@ services:
       - db
   
   queue:
+    image: ec2-13-51-6-86.eu-north-1.compute.amazonaws.com:5500/admin/queue
     build:
       context: .
       dockerfile: Dockerfile
