@@ -5,5 +5,5 @@ COPY requirements.txt /app/requirements.txt
 RUN pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org -r requirements.txt
 COPY . /app
 
-RUN chmod +x run.sh
-CMD ["run.sh"]
+RUN chmod +x run_admin.sh
+CMD ["run_admin.sh"]
