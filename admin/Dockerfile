@@ -6,4 +6,4 @@ RUN pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted
 COPY . /app
 
 RUN chmod +x run_admin.sh
-CMD ["app/run_admin.sh"]
+CMD ["/app/run_admin.sh"]
