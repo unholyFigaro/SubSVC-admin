@@ -7,5 +7,4 @@ COPY . /app
 
 EXPOSE 8000
 
-RUN chmod +x run_admin.sh
-CMD ["/app/run_queue.sh"]
+CMD ["python consumer.py"]
